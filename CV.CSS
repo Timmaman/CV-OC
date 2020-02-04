@@ -1,5 +1,8 @@
-
-
+body
+{
+	font-family: sans-serif;
+	color:#78909C;
+}
 header
 {
 	padding-left: 5%;
@@ -9,14 +12,15 @@ header
 {
 	display: flex;
 	justify-content: space-between;
+	flex-direction: row-reverse;
 }
 .texte
 {
 	min-width: 65%;
 	text-align: justify;
 	margin:50px;
-
 }
+
 #corps
 {
 	display:flex;
@@ -27,18 +31,28 @@ header
 #band
 {	
 	min-width: 250px;
-	background-color: #FB8C00;
+	background-color: #C0CA33;
 	text-align: justify;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	color:#607D8B;	
 }
-
-
+.competences
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.code
+{
+	min-width: 20%;
+	margin-right:100px;
+}
 i
 {
-	color: #FB8C00;
+	color: #C0CA33;
 }
 .divers
 {
@@ -48,50 +62,92 @@ i
 }
 .dates
 {
-	min-width: 20%;
-	margin-right: 100px; 
+	flex:2;
+	padding-right: 10px; 
+}
+.descriptions
+{
+	flex: 4;
+}
+.empty
+{
+	flex:1;
+}
+.langues
+{
+	flex:3;
+}
+.comp
+{
+	font-weight: bold;
 }
 .photo
 {
 	text-align:center;
+	margin-top: 50px;
 }
 .centres
 {
 	display: flex;
 	justify-content: space-around;
-	padding-right: 50px;
-	padding-left: 50px;
-	padding-bottom:0px;
+	padding-right: 80px;
+	padding-left: 80px;
+	padding-bottom:30px;
+}
+ul
+{
+	margin: 0;
+}
+p
+{
+	margin:0;
+}
+h1
+{
+	font-size: 2.5em;
+	margin-bottom:0;
+	font-weight: normal;
+}
+h2
+{
+	font-size: 1.2em;
+	margin-top: 0;
+	font-weight: normal;
+
 }
 h3
 {
-	border-bottom: 2px solid #FB8C00;
+	margin-top: 0;
+	font-size: 1.5em;
+	border-bottom: 2px solid #C0CA33;
 	padding: 15px;
-
 }
 h4
 {
-	font-size: 1.5em;
-	font-style: bold;
+	font-size: 1.2em;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+h5
+{
+	font-size: 1em;
+	margin-top:0.2em;
+	margin-bottom: 0.5em;
+
 }
 .barre
 {
 	padding-right:50px;
 	padding-left:50px;
 }
-h2
+h6
 {
+	margin-bottom:25px;
+	font-size: 1.5em;
 	padding: 5px;
 	text-align: center;
 	background-color: #78909C;
-}
-h5
-{
-	margin-bottom:0;
-}
-h6
-{
-	margin: 0;
+	color:#C0CA33;
 }
 img
 {
