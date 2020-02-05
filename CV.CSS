@@ -16,7 +16,7 @@ header
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	align-items: center;
 }
 .photo
 { 
@@ -24,14 +24,14 @@ header
 	height: 100%;
 	text-align: center;
 	min-width: 35%;
-	padding-top: 5%;
-	padding-bottom: 1%;
+	padding-top: 10%;
+	padding-bottom: 10.8%;
 }
 .titre
 {
-	min-width: 65%;
-	padding: 5%;
-
+	padding-top:10%;
+	padding-bottom: 10%;
+	padding-left: 5%;
 }
 .infos
 {
@@ -43,16 +43,82 @@ header
 {
 	min-width: 65%;
 	text-align: justify
-	padding:5%;
+	margin-left: 10%;
 }
-
 #corps
 {
 	display:flex;
 	justify-content: space-around;
 	flex-direction: column;
-	padding: 5%;
 	text-align: justify;
+	margin-left: 10%;
+	margin-right: 5%;
+}
+.divers
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+.informations
+{
+	flex:2;
+	display: flex;
+	flex-direction: column;
+	margin-right: 0.7em;
+}
+.dates
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+.periode
+{
+	padding-left: 1em;
+}
+.lieu
+{
+	padding-left: 2em;
+	text-align: left;
+}
+.descriptions
+{
+	flex: 4;
+}
+.comp
+{
+	font-weight: bold;
+	margin-bottom: 10%;
+}
+.compétences
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.empty1
+{
+	flex:0;
+}
+.codage
+{
+	flex:2;
+}
+.empty2
+{
+	flex:1;
+}
+.langues
+{
+	flex:3;
+}
+.empty3
+{
+	display: none;
 }
 #band
 {	
@@ -62,69 +128,33 @@ header
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	color:#607D8B;	
+	color:#607D8B;
+	min-width: 35%;
+	margin-left: 0;	
 }
-.competences
+.top
 {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: space-around;
 }
-.code
+.barre
 {
-	min-width: 20%;
-	margin-right:100px;
+	padding:3em;
 }
-i
-{
-	color: #C0CA33;
-}
-.divers
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-.dates
-{
-	flex:2;
-	padding-right: 10px; 
-}
-.descriptions
-{
-	flex: 4;
-}
-.empty
-{
-	flex:1;
-}
-.langues
-{
-	flex:3;
-}
-.comp
-{
-	font-weight: bold;
-}
-.centres
+.loisirs
 {
 	display: flex;
 	justify-content: space-around;
-	padding-right: 80px;
-	padding-left: 80px;
-	padding-bottom:30px;
+	padding-top: 3em;
+	padding-bottom:3em;
+	padding-left:6em;
+	padding-right: 6em;
 }
-ul
-{
-	margin: 0;
-}
-p
-{
-	margin:0;
-}
+
 h1
 {
-	font-size: 2.5em;
+	font-size: 3em;
 	margin-bottom:0;
 	font-weight: normal;
 }
@@ -137,68 +167,207 @@ h2
 }
 h3
 {
-	margin-top: 0;
-	font-size: 1.5em;
-	border-bottom: 2px solid #C0CA33;
-	padding: 15px;
+	margin-top:1em;
+	margin-bottom: 3em;
+	border-bottom: 0.1em solid #C0CA33;
+	padding-bottom: 0.5em;
+	display: flex;
+	align-items: center;
+}
+.entete
+{
+	padding-left: 1em;
+	font-size: 2em;
 }
 h4
 {
 	font-size: 1.2em;
 	margin-top: 0;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.2em;
 }
 h5
 {
 	font-size: 1em;
-	margin-top:0.2em;
+	margin-top:0;
 	margin-bottom: 0.5em;
-
-}
-.barre
-{
-	padding-right:50px;
-	padding-left:50px;
 }
 h6
 {
-	margin-bottom:25px;
+	margin:0;
 	font-size: 1.5em;
-	padding: 5px;
+	padding-bottom:0.3em;
+	padding-top: 0.3em;
 	text-align: center;
 	background-color: #78909C;
 	color:#C0CA33;
+	min-width: 100%;
+}
+p
+{
+	margin:0;
+}
+ul
+{
+	margin: 0;
 }
 img
 {
 	border-radius: 50%;
 }
-
-/*@media screen and (max-width: 1024px)
+i
 {
-	.band
-	{
-		flex-direction: column;
-		background-color: #FB8C00;
-		width: 250px;
-		justify-content: space-around;
-	}
+	color: #C0CA33;
 }
-@media screen and (min-width:1023px)
+@media screen and (max-width: 1014px)
 {
-	#all
+	.photo
+	{
+		background-color: white;
+	}
+	.head
+	{
+		flex-direction: space-around;
+	}
+	.infos
 	{
 		flex-direction: column;
 	}
 	#corps
 	{
-		flex-direction: column;
+		margin-left: 5%;
 	}
-	.band
+	.divers
+	{
+		margin-top:0;
+		margin-bottom: 2em;
+	}
+	.compétences
+	{
+		justify-content:space-around;
+	}
+	.empty1
+	{
+		flex:1;
+	}
+	.codage
+	{
+		flex:2;
+	}
+	.empty2
+	{
+		flex:1;
+	}
+	.langues
+	{
+		flex:2;
+	}
+	.empty3
+	{
+		flex:1;
+	}
+	#band
 	{
 		flex-direction: row;
-		height: 250px;
-		width: 100%;
-		justify-content: space-between;
+		justify-content: space-around;
+		padding-top: 0;
 	}
-}*/
+	.top
+	{
+		flex-direction: row;
+	}
+	.contact
+	{
+		text-align: center;
+	}
+	.barre
+	{
+		align-items: center;
+		padding:1.5em;
+	}
+	.loisirs
+	{
+		flex-direction: column;
+		text-align: center;
+		padding-top:4em;
+	}
+	h3
+	{
+		margin-bottom: 2em;
+	}
+
+}
+@media screen and (max-width:800px)
+{
+	.photo
+	{
+		margin-right: 1em;
+	}
+	#corps
+	{
+		margin-left: 2%;
+		margin-right: 2%;
+		margin-bottom: 2%;
+	}
+	.divers
+	{
+		margin-bottom: 1.5em;
+	}
+	.informations
+	{
+		margin-left: 0;
+		flex:2;
+		text-align: left;
+	}
+	.empty1
+	{
+		flex:0.5;
+	}
+	.codage
+	{
+		flex:2;
+	}
+	.empty2
+	{
+		flex:0.5;
+	}
+	.langues
+	{
+		flex:2;
+	}
+	.empty3
+	{
+		flex:0.5;
+	}
+
+	#band
+	{
+		flex-direction: column;
+		justify-content: space-around;
+		padding-bottom: 5%;
+	}
+	.top
+	{
+		flex-direction: column;
+	}
+	.barre
+	{
+		padding: 3em;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.loisirs
+	{
+		flex-direction: row;
+		padding-right: 15%;
+		padding-left: 15%;
+		padding-top: 2em;
+		padding-bottom: 1em;
+	}
+	h3
+	{
+		justify-content: center;
+		margin-top:0;
+		margin-bottom: 1em;
+	}
+}
