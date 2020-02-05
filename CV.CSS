@@ -5,10 +5,35 @@ body
 }
 header
 {
-	padding-left: 5%;
 	font-weight:bold;
 }
 #all
+{
+	display: flex;
+	flex-direction: column;
+}
+.head
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.photo
+{ 
+	background-color:#C0CA33;
+	height: 100%;
+	text-align: center;
+	min-width: 35%;
+	padding-top: 5%;
+	padding-bottom: 1%;
+}
+.titre
+{
+	min-width: 65%;
+	padding: 5%;
+
+}
+.infos
 {
 	display: flex;
 	justify-content: space-between;
@@ -17,8 +42,8 @@ header
 .texte
 {
 	min-width: 65%;
-	text-align: justify;
-	margin:50px;
+	text-align: justify
+	padding:5%;
 }
 
 #corps
@@ -27,10 +52,10 @@ header
 	justify-content: space-around;
 	flex-direction: column;
 	padding: 5%;
+	text-align: justify;
 }
 #band
 {	
-	min-width: 250px;
 	background-color: #C0CA33;
 	text-align: justify;
 	height: 100%;
@@ -80,11 +105,6 @@ i
 .comp
 {
 	font-weight: bold;
-}
-.photo
-{
-	text-align:center;
-	margin-top: 50px;
 }
 .centres
 {
