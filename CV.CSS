@@ -21,17 +21,15 @@ header
 .photo
 { 
 	background-color:#C0CA33;
-	height: 100%;
 	text-align: center;
-	min-width: 35%;
-	padding-top: 10%;
-	padding-bottom: 10.8%;
+	max-width: 35%;
+	padding-top:3%;
+	padding-bottom:3%; 
 }
 .titre
 {
-	padding-top:10%;
-	padding-bottom: 10%;
 	padding-left: 5%;
+	padding-right: 0;
 }
 .infos
 {
@@ -53,6 +51,20 @@ header
 	text-align: justify;
 	margin-left: 10%;
 	margin-right: 5%;
+}
+.entete
+{
+	margin-top:1em;
+	display: flex;
+	flex-direction: row;
+	border-bottom: 0.1em solid #C0CA33;
+	padding-bottom: 0.5em;
+	margin-bottom: 3em;
+	align-items: center;
+}
+.title
+{
+	padding-left: 1em;
 }
 .divers
 {
@@ -155,7 +167,6 @@ header
 h1
 {
 	font-size: 3em;
-	margin-bottom:0;
 	font-weight: normal;
 }
 h2
@@ -167,17 +178,9 @@ h2
 }
 h3
 {
-	margin-top:1em;
-	margin-bottom: 3em;
-	border-bottom: 0.1em solid #C0CA33;
-	padding-bottom: 0.5em;
-	display: flex;
-	align-items: center;
-}
-.entete
-{
-	padding-left: 1em;
 	font-size: 2em;
+	padding:0;
+	margin: 0;
 }
 h4
 {
@@ -213,11 +216,14 @@ ul
 img
 {
 	border-radius: 50%;
+	max-width: 65%;
 }
 i
 {
 	color: #C0CA33;
 }
+
+
 @media screen and (max-width: 1014px)
 {
 	.photo
@@ -269,7 +275,6 @@ i
 	{
 		flex-direction: row;
 		justify-content: space-around;
-		padding-top: 0;
 	}
 	.top
 	{
@@ -290,9 +295,13 @@ i
 		text-align: center;
 		padding-top:4em;
 	}
-	h3
+	.entete
 	{
 		margin-bottom: 2em;
+	}
+	img
+	{
+		max-width: 75%;
 	}
 
 }
@@ -301,6 +310,10 @@ i
 	.photo
 	{
 		margin-right: 1em;
+	}
+	.head
+	{
+		margin-bottom: 1em;
 	}
 	#corps
 	{
@@ -351,10 +364,26 @@ i
 	}
 	.barre
 	{
-		padding: 3em;
+		padding: 2em;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: space-around;
+	}
+
+	.align
+	{
+		min-width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom:1em;
+	}
+	.adresse
+	{
+		flex:1;
+	}
+	.mail
+	{
+		flex:1;
 	}
 	.loisirs
 	{
@@ -364,10 +393,14 @@ i
 		padding-top: 2em;
 		padding-bottom: 1em;
 	}
-	h3
+	.entete
 	{
 		justify-content: center;
 		margin-top:0;
 		margin-bottom: 1em;
+	}
+		img
+	{
+		max-width: 95%;
 	}
 }
