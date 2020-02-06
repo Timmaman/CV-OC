@@ -1,0 +1,406 @@
+body
+{
+	font-family: sans-serif;
+	color:#78909C;
+}
+header
+{
+	font-weight:bold;
+}
+#all
+{
+	display: flex;
+	flex-direction: column;
+}
+.head
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.photo
+{ 
+	background-color:#C0CA33;
+	text-align: center;
+	max-width: 35%;
+	padding-top:3%;
+	padding-bottom:3%; 
+}
+.titre
+{
+	padding-left: 5%;
+	padding-right: 0;
+}
+.infos
+{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+}
+.texte
+{
+	min-width: 65%;
+	text-align: justify
+	margin-left: 10%;
+}
+#corps
+{
+	display:flex;
+	justify-content: space-around;
+	flex-direction: column;
+	text-align: justify;
+	margin-left: 10%;
+	margin-right: 5%;
+}
+.entete
+{
+	margin-top:1em;
+	display: flex;
+	flex-direction: row;
+	border-bottom: 0.1em solid #C0CA33;
+	padding-bottom: 0.5em;
+	margin-bottom: 3em;
+	align-items: center;
+}
+.title
+{
+	padding-left: 1em;
+}
+.divers
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+.informations
+{
+	flex:2;
+	display: flex;
+	flex-direction: column;
+	margin-right: 0.7em;
+}
+.dates
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+.periode
+{
+	padding-left: 1em;
+}
+.lieu
+{
+	padding-left: 2em;
+	text-align: left;
+}
+.descriptions
+{
+	flex: 4;
+}
+.comp
+{
+	font-weight: bold;
+	margin-bottom: 10%;
+}
+.compétences
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.empty1
+{
+	flex:0;
+}
+.codage
+{
+	flex:2;
+}
+.empty2
+{
+	flex:1;
+}
+.langues
+{
+	flex:3;
+}
+.empty3
+{
+	display: none;
+}
+#band
+{	
+	background-color: #C0CA33;
+	text-align: justify;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color:#607D8B;
+	min-width: 35%;
+	margin-left: 0;	
+}
+.top
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.barre
+{
+	padding:3em;
+}
+.loisirs
+{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 3em;
+	padding-bottom:3em;
+	padding-left:6em;
+	padding-right: 6em;
+}
+
+h1
+{
+	font-size: 3em;
+	font-weight: normal;
+}
+h2
+{
+	font-size: 1.2em;
+	margin-top: 0;
+	font-weight: normal;
+
+}
+h3
+{
+	font-size: 2em;
+	padding:0;
+	margin: 0;
+}
+h4
+{
+	font-size: 1.2em;
+	margin-top: 0;
+	margin-bottom: 0.2em;
+}
+h5
+{
+	font-size: 1em;
+	margin-top:0;
+	margin-bottom: 0.5em;
+}
+h6
+{
+	margin:0;
+	font-size: 1.5em;
+	padding-bottom:0.3em;
+	padding-top: 0.3em;
+	text-align: center;
+	background-color: #78909C;
+	color:#C0CA33;
+	min-width: 100%;
+}
+p
+{
+	margin:0;
+}
+ul
+{
+	margin: 0;
+}
+img
+{
+	border-radius: 50%;
+	max-width: 65%;
+}
+i
+{
+	color: #C0CA33;
+}
+
+
+@media screen and (max-width: 1014px)
+{
+	.photo
+	{
+		background-color: white;
+	}
+	.head
+	{
+		flex-direction: space-around;
+	}
+	.infos
+	{
+		flex-direction: column;
+	}
+	#corps
+	{
+		margin-left: 5%;
+	}
+	.divers
+	{
+		margin-top:0;
+		margin-bottom: 2em;
+	}
+	.compétences
+	{
+		justify-content:space-around;
+	}
+	.empty1
+	{
+		flex:1;
+	}
+	.codage
+	{
+		flex:2;
+	}
+	.empty2
+	{
+		flex:1;
+	}
+	.langues
+	{
+		flex:2;
+	}
+	.empty3
+	{
+		flex:1;
+	}
+	#band
+	{
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.top
+	{
+		flex-direction: row;
+	}
+	.contact
+	{
+		text-align: center;
+	}
+	.barre
+	{
+		align-items: center;
+		padding:1.5em;
+	}
+	.loisirs
+	{
+		flex-direction: column;
+		text-align: center;
+		padding-top:4em;
+	}
+	.entete
+	{
+		margin-bottom: 2em;
+	}
+	img
+	{
+		max-width: 75%;
+	}
+
+}
+@media screen and (max-width:800px)
+{
+	.photo
+	{
+		margin-right: 1em;
+	}
+	.head
+	{
+		margin-bottom: 1em;
+	}
+	#corps
+	{
+		margin-left: 2%;
+		margin-right: 2%;
+		margin-bottom: 2%;
+	}
+	.divers
+	{
+		margin-bottom: 1.5em;
+	}
+	.informations
+	{
+		margin-left: 0;
+		flex:2;
+		text-align: left;
+	}
+	.empty1
+	{
+		flex:0.5;
+	}
+	.codage
+	{
+		flex:2;
+	}
+	.empty2
+	{
+		flex:0.5;
+	}
+	.langues
+	{
+		flex:2;
+	}
+	.empty3
+	{
+		flex:0.5;
+	}
+
+	#band
+	{
+		flex-direction: column;
+		justify-content: space-around;
+		padding-bottom: 5%;
+	}
+	.top
+	{
+		flex-direction: column;
+	}
+	.barre
+	{
+		padding: 2em;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.align
+	{
+		min-width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom:1em;
+	}
+	.adresse
+	{
+		flex:1;
+	}
+	.mail
+	{
+		flex:1;
+	}
+	.loisirs
+	{
+		flex-direction: row;
+		padding-right: 15%;
+		padding-left: 15%;
+		padding-top: 2em;
+		padding-bottom: 1em;
+	}
+	.entete
+	{
+		justify-content: center;
+		margin-top:0;
+		margin-bottom: 1em;
+	}
+		img
+	{
+		max-width: 95%;
+	}
+}
