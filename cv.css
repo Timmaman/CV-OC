@@ -1,169 +1,19 @@
+
 body
 {
 	font-family: sans-serif;
 	color:#78909C;
+	margin: 0;
 }
-header
-{
-	font-weight:bold;
-}
-#all
-{
-	display: flex;
-	flex-direction: column;
-}
-.head
-{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
-.photo
+figure
 { 
 	background-color:#C0CA33;
 	text-align: center;
+	margin:0;
 	max-width: 35%;
 	padding-top:3%;
 	padding-bottom:3%; 
 }
-.titre
-{
-	padding-left: 5%;
-	padding-right: 0;
-}
-.infos
-{
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row-reverse;
-}
-.texte
-{
-	min-width: 65%;
-	text-align: justify
-	margin-left: 10%;
-}
-#corps
-{
-	display:flex;
-	justify-content: space-around;
-	flex-direction: column;
-	text-align: justify;
-	margin-left: 10%;
-	margin-right: 5%;
-}
-.entete
-{
-	margin-top:1em;
-	display: flex;
-	flex-direction: row;
-	border-bottom: 0.1em solid #C0CA33;
-	padding-bottom: 0.5em;
-	margin-bottom: 3em;
-	align-items: center;
-}
-.title
-{
-	padding-left: 1em;
-}
-.divers
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-top: 2em;
-	margin-bottom: 3em;
-}
-.informations
-{
-	flex:2;
-	display: flex;
-	flex-direction: column;
-	margin-right: 0.7em;
-}
-.dates
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: baseline;
-}
-.periode
-{
-	padding-left: 1em;
-}
-.lieu
-{
-	padding-left: 2em;
-	text-align: left;
-}
-.descriptions
-{
-	flex: 4;
-}
-.comp
-{
-	font-weight: bold;
-	margin-bottom: 10%;
-}
-.compétences
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-.empty1
-{
-	flex:0;
-}
-.codage
-{
-	flex:2;
-}
-.empty2
-{
-	flex:1;
-}
-.langues
-{
-	flex:3;
-}
-.empty3
-{
-	display: none;
-}
-#band
-{	
-	background-color: #C0CA33;
-	text-align: justify;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	color:#607D8B;
-	min-width: 35%;
-	margin-left: 0;	
-}
-.top
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-.barre
-{
-	padding:3em;
-}
-.loisirs
-{
-	display: flex;
-	justify-content: space-around;
-	padding-top: 3em;
-	padding-bottom:3em;
-	padding-left:6em;
-	padding-right: 6em;
-}
-
 h1
 {
 	font-size: 3em;
@@ -203,7 +53,6 @@ h6
 	text-align: center;
 	background-color: #78909C;
 	color:#C0CA33;
-	min-width: 100%;
 }
 p
 {
@@ -212,6 +61,7 @@ p
 ul
 {
 	margin: 0;
+	padding-left: 20px;
 }
 img
 {
@@ -222,23 +72,168 @@ i
 {
 	color: #C0CA33;
 }
-
-
-@media screen and (max-width: 1014px)
+#haut
 {
-	.photo
+	color:#C0CA33; 
+	font-weight:bold;
+}
+#bas
+{
+	border-bottom: 2px solid #C0CA33;
+}
+.head
+{
+	font-weight:bold;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.titre
+{
+	margin-left: 5%;
+	padding-right: 0;
+}
+main
+{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+}
+#texte
+{
+	min-width: 55%;
+	text-align: justify;
+	margin-left: 5%;
+	display:flex;
+	flex-direction: column;
+	margin-right: 5%;
+}
+.entete
+{
+	margin-top:1em;
+	display: flex;
+	flex-direction: row;
+	border-bottom: 0.1em solid #C0CA33;
+	margin-bottom: 3em;
+	align-items: center;
+	padding-bottom: 0.3em;
+}
+.title
+{
+	padding-left: 1em;
+}
+.divers
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+.informations
+{
+	flex-basis:20%;
+	display: flex;
+	flex-direction: column;
+	margin-right: 0.7em;
+}
+.dates
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+.periode
+{
+	padding-left: 1em;
+}
+.lieu
+{
+	padding-left: 2em;
+	text-align: left;
+}
+.descriptions
+{
+	flex-basis: 70%;
+}
+#comp
+{
+	margin-bottom: 10%;
+}
+#competences
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-right: 30%;
+}
+.codage
+{
+	flex-basis:33.3%;
+}
+.langues
+{
+	flex-basis:50%;
+}
+#band
+{	
+	background-color: #C0CA33;
+	text-align: justify;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color:#607D8B;
+	min-width: 35%;
+	margin-right: 0;	
+}
+.top
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.barre
+{
+	padding:3em;
+}
+.loisirs
+{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 3em;
+	padding-bottom:3em;
+	padding-left:6em;
+	padding-right: 6em;
+}
+
+@media screen and (max-width: 1200px)
+{
+	figure
 	{
 		background-color: white;
+	}
+	main
+	{
+		flex-direction: column;
+	}
+	img
+	{
+		max-width: 75%;
 	}
 	.head
 	{
 		flex-direction: space-around;
 	}
-	.infos
+	#texte
 	{
-		flex-direction: column;
+		padding-right: 5%;
+		padding-left: 5%;
+		margin-left: 0;
+		margin-right: 0;
 	}
-	#corps
+	.informations
 	{
 		margin-left: 5%;
 	}
@@ -247,29 +242,27 @@ i
 		margin-top:0;
 		margin-bottom: 2em;
 	}
-	.compétences
+	.descriptions
+	{
+		flex-basis: 60%;
+	}
+	#comp
+	{
+		margin-bottom: 5%;
+	}
+	#competences
 	{
 		justify-content:space-around;
-	}
-	.empty1
-	{
-		flex:1;
+		margin-left: 15%;
+		margin-right: 15%;
 	}
 	.codage
 	{
-		flex:2;
-	}
-	.empty2
-	{
-		flex:1;
+		flex-basis:40%;
 	}
 	.langues
 	{
-		flex:2;
-	}
-	.empty3
-	{
-		flex:1;
+		flex-basis:40%;
 	}
 	#band
 	{
@@ -299,27 +292,45 @@ i
 	{
 		margin-bottom: 2em;
 	}
-	img
-	{
-		max-width: 75%;
-	}
 
 }
 @media screen and (max-width:800px)
 {
-	.photo
+	img
 	{
-		margin-right: 1em;
+		max-width: 100%;
+	}
+	h1
+	{
+		font-size: 2.5em;
+		margin-bottom: 0.5em;
+	}
+	h3
+	{
+		font-size: 1.5em;
+		padding-left: 10px;
+	}
+	#exp
+	{
+		text-align: center;
+		width: 192px;
+	}
+	h4
+	{
+		font-size: 1.1em;
+	}
+	h5
+	{
+		text-align: left;
 	}
 	.head
 	{
-		margin-bottom: 1em;
+		margin: 1em;
 	}
-	#corps
+	#texte
 	{
-		margin-left: 2%;
-		margin-right: 2%;
-		margin-bottom: 2%;
+		padding:2%;
+		margin: 0;
 	}
 	.divers
 	{
@@ -328,30 +339,25 @@ i
 	.informations
 	{
 		margin-left: 0;
-		flex:2;
 		text-align: left;
+		flex-basis: 30%;
 	}
-	.empty1
+	#comp
 	{
-		flex:0.5;
+		margin-bottom: 3%;
+	}
+	#competences
+	{
+		margin:0;
 	}
 	.codage
 	{
-		flex:2;
-	}
-	.empty2
-	{
-		flex:0.5;
+		flex-basis:30%;
 	}
 	.langues
 	{
-		flex:2;
+		flex-basis:30%;
 	}
-	.empty3
-	{
-		flex:0.5;
-	}
-
 	#band
 	{
 		flex-direction: column;
@@ -367,23 +373,22 @@ i
 		padding: 2em;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
 	}
-
 	.align
 	{
-		min-width: 100%;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		padding-bottom:1em;
+		min-width: 80%;
 	}
-	.adresse
+	.adresse 
 	{
-		flex:1;
+		flex-basis: 50%;
 	}
 	.mail
 	{
-		flex:1;
+		flex-basis: 50%;
 	}
 	.loisirs
 	{
@@ -398,9 +403,12 @@ i
 		justify-content: center;
 		margin-top:0;
 		margin-bottom: 1em;
-	}
-		img
+	}	
+}
+@media screen and (max-width: 400px)
+{
+	.informations
 	{
-		max-width: 95%;
+		flex-basis: 35%;
 	}
 }
