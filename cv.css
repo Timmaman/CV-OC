@@ -1,4 +1,3 @@
-
 body
 {
 	font-family: sans-serif;
@@ -221,10 +220,6 @@ main
 	img
 	{
 		max-width: 75%;
-	}
-	.head
-	{
-		flex-direction: space-around;
 	}
 	#texte
 	{
