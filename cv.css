@@ -227,10 +227,8 @@ main
 	}
 	#texte
 	{
-		padding-right: 5%;
-		padding-left: 5%;
-		margin-left: 0;
-		margin-right: 0;
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 	.informations
 	{
