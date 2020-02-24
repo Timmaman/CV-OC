@@ -232,8 +232,8 @@ main
 	}
 	.informations
 	{
-		flex-basis:20%;	
 		margin-left: 5%;
+		flex-basis: 20%;
 	}
 	.divers
 	{
